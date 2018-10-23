@@ -15,8 +15,8 @@ Feature: Verifying CRUD options in Computer Database
 
         Examples:
         | name    | introDate  | discontinuedate | companyName |
-        | Jain1   | 2017-06-20 | 2020-06-20      | RCA         |
-        | Jain2   | 2017-05-20 | 2020-05-20      | IBM         |
+        | Jain11  | 2017-06-20 | 2020-06-20      | RCA         |
+        | Jain22  | 2017-05-20 | 2020-05-20      | IBM         |
             
 
         Scenario Outline: Searching and Verifying details of an existing Computer
@@ -30,8 +30,8 @@ Feature: Verifying CRUD options in Computer Database
         
         Examples:
         | name    | introDate  | discontinueDate | companyName |
-        | Jain3   | 2017-06-20 | 2020-06-20      | RCA         |
-        | Jain4   | 2017-05-20 | 2020-05-20      | IBM         |
+        | Jain33  | 2017-06-20 | 2020-06-20      | RCA         |
+        | Jain44  | 2017-05-20 | 2020-05-20      | IBM         |
         
         Scenario Outline: Editing an existing Computer
         Given I open Computer database application as an admin
@@ -45,8 +45,8 @@ Feature: Verifying CRUD options in Computer Database
         Then computer should be saved with new details - "<newName>", "<newIntroDate>" and "<newDiscontinueDate>"
 
         Examples:
-        | computerName | newName | introDate  | discontinueDate | companyName | newIntroDate | newDiscontinueDate |
-        | Jain5        | Jain55  | 2017-06-19 | 2020-06-19      | RCA         | 2018-06-19   | 2021-06-19         |           
+        | computerName | newName  | introDate  | discontinueDate | companyName | newIntroDate | newDiscontinueDate |
+        | Jain55       | Jain555  | 2017-06-19 | 2020-06-19      | RCA         | 2018-06-19   | 2021-06-19         |           
 
        Scenario Outline: Deleting an existing Computer
         Given I open Computer database application as an admin
@@ -58,5 +58,5 @@ Feature: Verifying CRUD options in Computer Database
 
         Examples:
         | computerName | introDate  | discontinueDate | companyName |
-        | Jain88       | 2017-06-19 | 2020-06-19      | RCA         |        
-        | Jain77       | 2017-05-19 | 2020-05-19      | IBM         |
+        | NJ1          | 2017-06-19 | 2020-06-19      | RCA         |        
+        | NJ2          | 2017-05-19 | 2020-05-19      | IBM         |
