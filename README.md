@@ -21,4 +21,5 @@ Steps to set up:
 
 4.  Download all project dependencies by running npm install
 
-4.	Run command : protractor conf.js
+4.	Run below command to execute the tests : 
+    npm run e2e
