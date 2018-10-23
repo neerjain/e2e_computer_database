@@ -1,0 +1,23 @@
+{
+  "name": "e2etests",
+  "version": "1.0.0",
+  "description": "protractor cucumber framework",
+  "main": "conf.js",
+  "dependencies": {
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^4.2.1",
+    "cucumber-html-reporter": "^4.0.4",
+    "cucumber-pretty": "^1.4.4",
+    "fs": "0.0.1-security",
+    "mkdirp": "^0.5.1",
+    "moment": "^2.22.2",
+    "protractor-cucumber-framework": "^6.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "e2e": "protractor conf.js"
+  },
+  "author": "Neeraj Jain",
+  "license": "ISC"
+}
